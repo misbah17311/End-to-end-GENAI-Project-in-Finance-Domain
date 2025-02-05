@@ -21,7 +21,7 @@ file_path="faiss_store_huggingface.pkl"
 main_placefolder=st.empty()
 llm = HuggingFaceEndpoint(
     endpoint_url="https://api-inference.huggingface.co/models/openai-community/gpt2",  # Hugging Face model endpoint
-    huggingfacehub_api_token="",                  # Your Hugging Face API token
+    huggingfacehub_api_token="your_hugging_face_api_token",                  # Your Hugging Face API token
     temperature=0.7,  # Control randomness (moved outside model_kwargs)
              # Use nucleus sampling (moved outside model_kwargs)
     #model_kwargs={"max_length": 100}   # Other model parameters can go here if needed
